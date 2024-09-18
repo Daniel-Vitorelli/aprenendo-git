@@ -1,4 +1,4 @@
-# Primeiros Passos
+# PRIMEIROS PASSOS
 > &nbsp;
 > #### 1. VERIFICANDO A INSTALAÇÃO
 > > Você pode verificar  versão instalada do seu git digitando o seguinte comando no prompt de comando:
@@ -54,3 +54,34 @@
 >&nbsp;
 
 &nbsp;
+
+# GERENCIAMENTO DE VERSÕES
+> &nbsp;
+> ### 1. NAVEGANDO ENTRE VERSÕES
+> > Primeiro use o git log para ver seus commits. Um deles tera (HEAD -> master) , oque tiver será oque esta selecionado.
+> > Para selecionar outro commit, você pode escrever "git checkout" e depois a versão que quer.
+> > Para ver todas as commits, até as que foram feitas depois da que esta selecionada, pode-se usar o comando:
+> > ```GIT
+> > git log --all
+> > ```
+> > Por fim, para voltar direto para a commit mais atualizada, se usa o comando:
+> > ```GIT
+> > git checkout master
+> > ```
+>
+> ### 2. RAMIFICAÇÃO (BRANCH)
+> > Se o seu código é como se fosse uma linha do tempo, e cada commit é um ponto nesta linha do tempo em que se pode visitar, o branch seria uma ramificação da linha do tempo, partindo sempre de algum ponto (commit) podendo-se assim criar novos pontos (commits) ou alterações no código sem alterar o código em produção, que é comparado a linha do tempo principal (master). A ramificação (branch) pode ter sua terminação em outro ponto (commit) da linha do tempo principal, fazendo assim, ou não, a fusão (merge) da linha do tempo ramificada (branch) com o ponto (commit) de seu termino.
+>
+> ### 3. CRIANDO UMA BRANCH
+> > Para fazer uma branch e ja navegar para ela, deve-se estar selecionado o commit de partida da branch e digitar o seguinte comando: "git checkout -b " e depois o nome para esta branch.
+> > Continuando o exemplo anteriormente citado, poderíamos criar uma branch da seguinte forma:
+> > ```GIT
+> > git checkout -b inscrição
+> > ```
+> > Para ver suas branch's pode-se usar o comando:
+> > ```GIT
+> > git branch
+> > ```
+>
+> ### 4. FUNDINDO BRANCH'S (MERGE)
+> >  Com o commit que você quer que seja fundido com um branch selecionado, escreva o seguinte comando: "git merge " e depois o nome da branch que quer fundir.
