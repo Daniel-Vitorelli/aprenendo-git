@@ -14,7 +14,7 @@
 > >```
 > > Fazendo isso você tera inicializado um repositório vazio.
 > >
-> > Para verificar o status do eu repositório, você pode digitar o seguinte comando no terminal:
+> > Para verificar o status do seu repositório, você pode digitar o seguinte comando no terminal:
 > > ```GIT
 > > git status
 > > ```
